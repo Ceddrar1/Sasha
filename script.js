@@ -1,6 +1,6 @@
 // ВСТАВЬ ВАШУ ДАТУ ЗДЕСЬ (Год, Месяц - 1, День)
 // Внимание: месяцы в JS начинаются с 0 (январь = 0, сентябрь = 8)
-const startDate = new Date(2025, 6, 29); 
+const startDate = new Date(2025, 7, 29); 
 
 function updateTimer() {
     const now = new Date();
@@ -12,7 +12,7 @@ function updateTimer() {
     const secs = Math.floor((diff / 1000) % 60);
 
     document.getElementById('timer').innerText = 
-        +${d} д ${hours} ч ${mins} м ${secs} с+;
+        `${days} д ${hours} ч ${mins} м ${secs} с`;
 }
 
 setInterval(updateTimer, 1000);

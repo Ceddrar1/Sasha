@@ -12,7 +12,7 @@ function updateTimer() {
     const secs = Math.floor((diff / 1000) % 60);
 
     document.getElementById('timer').innerText = 
-        +${days} д ${hours} ч ${mins} м ${secs} с+;
+        +${d} д ${hours} ч ${mins} м ${secs} с+;
 }
 
 setInterval(updateTimer, 1000);
